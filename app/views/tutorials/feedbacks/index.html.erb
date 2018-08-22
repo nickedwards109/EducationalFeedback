@@ -1,0 +1,5 @@
+This is all the feedback provided for the tutorial <%= @tutorial.name %>.
+
+<% @tutorial.feedbacks.each do |feedback| %>
+  <%= feedback.content %>
+<% end %>

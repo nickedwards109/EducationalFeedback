@@ -1,0 +1,7 @@
+Hi! Thank you so much for providing any feedback you have on the tutorial <%= @tutorial.name %>! Your feedback is anonymous. Please let us know about anything in particular that you found confusing, or anything that you liked or disliked, or really anything at all!
+
+<%= form_for :feedback do |f| %>
+  Feedback: <%= f.text_area :content %>
+            <%= hidden_field_tag 'feedback[tutorial_id]', @tutorial.id %>
+            <%= f.submit 'Send Feedback' %>
+<% end %>

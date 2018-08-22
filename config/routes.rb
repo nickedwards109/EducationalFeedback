@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'tutorials/:slug/feedbacks/new', to: 'tutorials/feedbacks#new'
+  post 'tutorials/:slug/feedbacks/new', to: 'tutorials/feedbacks#create'
+  get 'tutorials/:slug/feedbacks', to: 'tutorials/feedbacks#index'
 end
