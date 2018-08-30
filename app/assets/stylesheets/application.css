@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   margin: 0px;
+ }
+
+.top-level-layout-container {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00693e;
+  color: white;
+}

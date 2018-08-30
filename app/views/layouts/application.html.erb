@@ -6,9 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro">
   </head>
 
   <body>
-    <%= yield %>
+    <div class='top-level-layout-container'>
+      <%= yield %>
+    </div>
   </body>
 </html>

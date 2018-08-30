@@ -1,5 +1,10 @@
-This is all the feedback provided for the tutorial <%= @tutorial.name %>.
+<div class="copy">
+  This is all the feedback that has been offered for the tutorial <%= @tutorial.name %>.
+</div>
+
 
 <% @tutorial.feedbacks.each do |feedback| %>
-  <%= feedback.content %>
+  <div class="copy">
+    <%= feedback.content %>
+  </div>
 <% end %>
